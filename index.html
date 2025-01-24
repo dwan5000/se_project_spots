@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spots</title>
+    <meta name="author" content="Dwan McDowell" />
+    <meta
+      name="description"
+      content="A spots app that is reactive and structured"
+    />
+    <meta name="keywords" content="Cards, Reactive, Travel" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="./images/spotslogo.svg"
+          alt="Spots Logo"
+        />
+      </header>
+      <main class="content">
+        <section class="profile page__section">
+          <img
+            src="./images/avatar.jpg"
+            alt="Avatar picture"
+            class="profile__avatar"
+          />
+          <div class="profile__column">
+            <h1 class="profile__title">Bessie Coleman</h1>
+            <p class="profile__subtitle">Civil Aviator</p>
+            <button type="button" class="profile__button">
+              <img
+                src="./images/pencil.svg"
+                alt="pencil logo"
+                class="profile__pencil-button"
+              />Edit Profile
+            </button>
+          </div>
+          <button type="button" class="profile__plus-button">
+            <img
+              src="./images/plus.svg"
+              alt="plus logo"
+              class="profile__add-button"
+            />New Post
+          </button>
+        </section>
+        <section class="cards page__section">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Val Thorens</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt="Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Restaurant terrace</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt="Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">An outdoor cafe</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt="Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">
+                  A very long bridge, over the forest...
+                </h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt="Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Tunnel with morning light</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="Val Thorens"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Mountain house</h2>
+                <button type="button" class="card__like-button"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer page__section">
+          <p class="footer__copyright">2023 &copy; Spots</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
