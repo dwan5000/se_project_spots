@@ -30,4 +30,4 @@ The spots project is a website that resembles what a practical social media webs
 
 This webpage is deployed to Github Pages.
 
-* Deployment Link:
+* [Deployment Link:](https://dwan5000.github.io/se_project_spots/) 
