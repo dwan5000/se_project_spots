@@ -20,11 +20,8 @@
   font-weight: 500;
   line-height: 24px;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
-  line-clamp: 3;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
   max-width: 413px;
 }
 

@@ -60,6 +60,7 @@
   font-weight: 500;
   line-height: 16px;
   cursor: pointer;
+  max-width: 125px;
 }
 
 .profile__button:hover {
@@ -128,6 +129,7 @@
 
   .profile__button {
     justify-content: center;
+    max-width: 288px;
   }
 
   .profile__plus-button {
