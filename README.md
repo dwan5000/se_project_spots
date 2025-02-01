@@ -8,28 +8,28 @@ The spots project is a website that resembles what a practical social media webs
 
 ## Tech Stack
 
-* HTML
+- HTML
 
-* CSS
+- CSS
 
-* Responsive Design
+- Responsive Design
 
-* Fonts
+- Fonts
 
-* Flexbox
+- Flexbox
 
-* Grid Flexbox
+- Grid Flexbox
 
-*  ![alt text](./images/demo/spotslogo.svg)
+- ![alt text](./images/demo/spotslogo.svg)
 
-* ![alt text](./images/demo/heart.svg)
+- ![alt text](./images/demo/heart.svg)
 
-*  ![alt text](./images/demo/pencil.svg)
+- ![alt text](./images/demo/pencil.svg)
 
 ## Deployment
 
 This webpage is deployed to Github Pages.
 
-* [Deployment Link:](https://dwan5000.github.io/se_project_spots/) Website
+- [Deployment Link:](https://dwan5000.github.io/se_project_spots/) Website
 
-* [ Deployment Link: ](https://drive.google.com/file/d/1C7ZM3CO1LUVZDL9aPf4RxjFOmskKcHXx/view?usp=drive_link) Video
+- [Deployment Link:](https://drive.google.com/file/d/1C7ZM3CO1LUVZDL9aPf4RxjFOmskKcHXx/view?usp=sharing) Video
