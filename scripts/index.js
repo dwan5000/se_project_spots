@@ -26,7 +26,7 @@ const initialCards = [
 ];
 
 const profileEditButton = document.querySelector(".profile__edit-btn");
-
+const profileButton = document.querySelector(".profile__button")
 const editModal = document.querySelector("#edit-modal");
 const editModalCloseBtn = editModal.querySelector(".modal__close-btn");
 
@@ -39,5 +39,5 @@ function closeModal() {
 }
 
 profileEditButton.addEventListener("click", openModal);
-
+profileButton.addEventListener("click", openModal);
 editModalCloseBtn.addEventListener("click", closeModal);
