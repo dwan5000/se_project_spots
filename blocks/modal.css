@@ -97,6 +97,7 @@
 
   .modal__container {
     padding: 12px;
+    top: 45px;
   }
 
   .modal__title {
