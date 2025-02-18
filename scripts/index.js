@@ -45,14 +45,11 @@ function getCardElement(cardData) {
   const cardElement = cardTemplate.content
     .querySelector(".card")
     .cloneNode(true);
+  const cardNameEl = cardElement.querySelector(".card__title");
+  const cardImageEl = cardElement.querySelector(".card__image");
 
-  const cardNameEl = cardTemplate.querySelector(".card__title");
-  const cardImageEl = cardTemplate.querySelector(".card__image");
-
-  cardNameEl.textcontent = cardData.name;
-
+  cardNameEl.textContent = cardData.name;
   cardImageEl.src = cardData.link;
-
   cardImageEl.alt = cardData.name;
 
   return cardElement;
