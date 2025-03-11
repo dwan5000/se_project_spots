@@ -164,11 +164,19 @@
     right: 12px;
   }
 
-  .modal__label {
-    margin-bottom: 24px;
-  }
-
   .modal__submit-btn {
     width: 100%;
+  }
+
+  .modal__container_type_preview {
+    padding: 0;
+  }
+
+  .modal__close_type_preview {
+    top: -41px;
+  }
+
+  .modal__image {
+    max-width: 288px;
   }
 }
