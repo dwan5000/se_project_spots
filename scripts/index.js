@@ -109,8 +109,7 @@ function handleEscape(evt) {
   if (evt.key === "Escape") {
     const openedPopup = document.querySelector(".modal_is-opened");
     if (openedPopup) {
-      openedPopup.classList.remove('modal_is-opened');
-      document.removeEventListener("keydown", handleEscape);
+      closeModal(openedPopup);
     }
   }
 }
@@ -121,10 +120,9 @@ function openModal(modal) {
 }
 
 function closeModal(modal) {
+  document.removeEventListener("keydown", handleEscape);
   modal.classList.remove("modal_is-opened");
-
 }
-
 
 function handleEditFormSubmit(evt) {
   evt.preventDefault();
@@ -156,7 +154,6 @@ profileButton.addEventListener("click", () => {
   );
   openModal(editModal);
 });
-
 
 editModalCloseBtn.addEventListener("click", () => {
   closeModal(editModal);
