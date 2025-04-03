@@ -76,7 +76,7 @@
   transition: opacity 0.3s;
 }
 
-.modal__close_type_preview {
+.modal__close-btn_type_preview {
   background-image: url(../images/closeButtonPreview.svg);
   top: 0;
   right: -52.5px;
@@ -84,7 +84,7 @@
   transition: background-image 0.3s;
 }
 
-.modal__close_type_preview:hover {
+.modal__close-btn_type_preview:hover {
   background-image: url(../images/closeButtonPreviewHover.svg);
 }
 

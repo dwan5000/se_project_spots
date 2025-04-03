@@ -53,8 +53,26 @@ const previewModal = document.querySelector("#preview-modal");
 const previewModalImage = previewModal.querySelector(".modal__image");
 const previewModalCaption = previewModal.querySelector(".modal__caption");
 const previewCloseButton = previewModal.querySelector(
-  ".modal__close_type_preview"
+  ".modal__close-btn_type_preview"
 );
+
+editModal.addEventListener("click", (evt) => {
+  if (evt.target === editModal) {
+    closeModal(editModal);
+  }
+});
+
+addModal.addEventListener("click", (evt) => {
+  if (evt.target === addModal) {
+    closeModal(addModal);
+  }
+});
+
+previewModal.addEventListener("click", (evt) => {
+  if (evt.target === previewModal) {
+    closeModal(previewModal);
+  }
+});
 
 function getCardElement(cardData) {
   const cardElement = cardTemplate.content
@@ -84,36 +102,29 @@ function getCardElement(cardData) {
     previewModalImage.alt = cardData.name;
   });
 
-  previewCloseButton.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
-
   return cardElement;
 }
 
-function handleEsc(evt, modal) {
+function handleEscape(evt) {
   if (evt.key === "Escape") {
-    closeModal(modal);
+    const openedPopup = document.querySelector(".modal_is-opened");
+    if (openedPopup) {
+      openedPopup.classList.remove('modal_is-opened');
+      document.removeEventListener("keydown", handleEscape);
+    }
   }
 }
 
 function openModal(modal) {
-  const handleEscWithModal = (evt) => handleEsc(evt, modal);
-  document.addEventListener("keydown", handleEscWithModal);
-
-  modal.addEventListener("click", (evt) => {
-    if (evt.target === modal) {
-      closeModal(modal);
-    }
-  });
-
+  document.addEventListener("keydown", handleEscape);
   modal.classList.add("modal_is-opened");
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
-  document.removeEventListener("keydown", handleEsc);
+
 }
+
 
 function handleEditFormSubmit(evt) {
   evt.preventDefault();
@@ -146,6 +157,7 @@ profileButton.addEventListener("click", () => {
   openModal(editModal);
 });
 
+
 editModalCloseBtn.addEventListener("click", () => {
   closeModal(editModal);
 });
@@ -156,6 +168,10 @@ profileAddButton.addEventListener("click", () => {
 
 addModalCloseBtn.addEventListener("click", () => {
   closeModal(addModal);
+});
+
+previewCloseButton.addEventListener("click", () => {
+  closeModal(previewModal);
 });
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);
