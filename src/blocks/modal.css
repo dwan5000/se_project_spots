@@ -165,6 +165,49 @@
   background-color: rgba(33, 33, 33, 0.8);
 }
 
+.modal__delete-title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.modal__close_delete-btn {
+  right: -41px;
+  top: -6px;
+  background-image: url(../images/closeButtonPreview.svg);
+}
+
+.modal__delete-form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal__submit_delete-btn {
+  color: rgba(33, 33, 33, 1);
+  background-color: rgba(255, 101, 101, 1);
+  transition: background 0.3s;
+}
+
+.modal__submit_delete-btn:hover {
+  background-color: rgba(255, 51, 51, 1);
+}
+
+.modal__submit_cancel-btn {
+  color: rgba(33, 33, 33, 1);
+  background-color: white;
+  border: solid 1px;
+  transition: background 0.3s;
+}
+
+.modal__submit_cancel-btn:hover {
+  background-color: rgba(33, 33, 33, 1);
+  color: white;
+}
+
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
